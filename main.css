@@ -1,0 +1,483 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+canvas {
+    touch-action: none;
+}
+.label {
+    color: #FFF;
+    font-family: sans-serif;
+    padding: calc(100vh * (3 / 703));
+    border: calc(100vh * (2 / 703));
+    font-size: calc(100vh * (20 / 703));
+    position: absolute;
+    background: rgba( 0, 0, 0, .6 );
+    border-radius: calc(100vh * (5 / 703));
+    user-select: none;
+    z-index: 1;
+}
+.label.c-start {
+    z-index: 2;
+}
+.label.c-start-bt {
+    top: 53vh;
+    left: 50vw;
+    z-index: 3;
+    transform: translateX(-50%);
+}
+.label.c-connect-input {
+    top: 68vh;
+    left: 50vw;
+    z-index: 3;
+    transform: translateX(-50%);
+}
+.label.c-connect-bt {
+    top: 78vh;
+    left: 50vw;
+    z-index: 3;
+    transform: translateX(-50%);
+}
+.label.c-game-result {
+    top: 60%;
+    left: 51%;
+    z-index: 3;
+    transform: translateX(-50%);
+}
+.label.c-helper-bt {
+    top: 88vh;
+    left: 50vw;
+    z-index: 3;
+    transform: translateX(-50%);
+}
+.label.c-helper-div {
+    top: 3vh;
+    left: 50vw;
+    z-index: 4;
+    transform: translateX(-50%);
+}
+.label.c-helper-title-div {
+    top: 3%;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%);
+    background: rgba( 0, 0, 0, 0 );
+}
+.label.c-helper-close-bt {
+    top: 3%;
+    right: 7%;
+    z-index: 5;
+}
+.label.c-helper-text-div1 {
+    top: 15%;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%);
+}
+.label.c-helper-text-div2 {
+    top: 68%;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%);
+}
+.label.c-end {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.label.c-end-div {
+    top: 70%;
+    left: 50%;
+    z-index: 3;
+    transform: translateX(-50%);
+}
+.label.c-party {
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.label.c-status {
+    top: calc(3% + calc(100vh * (40 / 703)));
+    left: 50%;
+    transform: translateX(-50%);
+}
+.label.c-setting-bt {
+    top: 3%;
+    right: 1%;
+    z-index: 4;
+}
+.label.c-setting-title-div {
+    top: 3%;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%);
+    background: rgba( 0, 0, 0, 0 );
+}
+.label.c-setting-switch1-text {
+    top: 15%;
+    left: 35%;
+    z-index: 5;
+    background: rgba( 0, 0, 0, 0 );
+}
+.label.c-setting-switch2-text {
+    top: 30%;
+    left: 35%;
+    z-index: 5;
+    background: rgba( 0, 0, 0, 0 );
+}
+.label.c-setting-volume-text1 {
+    top: 45%;
+    left: 35%;
+    z-index: 5;
+    background: rgba( 0, 0, 0, 0 );
+}
+.label.c-setting-volume-text2 {
+    top: 60%;
+    left: 35%;
+    z-index: 5;
+    background: rgba( 0, 0, 0, 0 );
+}
+.label.c-previous-text {
+    top: 78vh;
+    left: 43vw;
+    translate: translateX(-50%);
+    z-index: 11;
+}
+.current {
+    color: #FFF;
+    font-family: sans-serif;
+    padding: calc(100vh * (3 / 703));
+    border: calc(100vh * (2 / 703));
+    font-size: calc(100vh * (20 / 703));
+    position: absolute;
+    background: rgba( 0, 0, 0, 0 );
+    border-radius: calc(100vh * (5 / 703));
+    user-select: none;
+    z-index: 0;
+}
+.meter-div {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+}
+.meter {
+    width: 40vh;
+    height: 3vw;
+    transform: rotate(270deg) translateY(160%);
+}
+.volume-div {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    transform: translateY(-50%);
+    background-color: rgba( 0, 0, 0, 0 );
+}
+.volume {
+    width: 15vw;
+    height: 5vh;
+    transform: rotate(270deg) translateY(100%);
+}
+.box-div {
+    color: #FFF;
+    font-family: sans-serif;
+    padding: calc(100vh * (3 / 703));
+    border: calc(100vh * (2 / 703));
+    font-size: calc(100vh * (20 / 703));
+    position: absolute;
+    background: rgba( 0, 0, 0, .6 );
+    border-radius: calc(100vh * (5 / 703));
+    user-select: none;
+}
+.top-centered {
+    /* left: 50%;
+    transform: translateX(-50%); */
+    color: #FFF;
+}
+.aris-bx {
+    left: 6%;
+    top: 3%;
+}
+.sensei-bx {
+    right: 6%;
+    top: 3%;
+}
+.shoot-target-div {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+.c-start-bt {
+    width: 18vw;
+    height: 8vh;
+    font-size: calc(100vh * (30 / 703));
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #19406b;
+}
+.c-connect-bt {
+    width: 18vw;
+    height: 8vh;
+    font-size: calc(100vh * (30 / 703));
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #19406b;
+}
+.c-connect-id {
+    position: absolute;
+    top: 62vh;
+    left: 50vw;
+    z-index: 3;
+    transform: translateX(-50%);
+    width: 18vw;
+    height: 8vh;
+    font-size: calc(100vh * (24 / 703));
+    font-weight: bolder;
+    color: #ffffff;
+    /* background-color: #19406b; */
+    text-align: center;
+}
+.c-connect-id > p {
+    margin: 0;
+}
+.c-connect-input {
+    width: 17.5vw;
+    height: 8vh;
+    font-size: calc(100vh * (26 / 703));
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #19406b;
+    text-align: center;
+}
+.c-game-result {
+    width: 20vw;
+    height: 8vh;
+    font-size: calc(100vh * (40 / 703));
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: rgba( 0, 0, 0, 0 );
+
+}
+.c-helper-bt {
+    width: 18vw;
+    height: 8vh;
+    font-size: calc(100vh * (30 / 703));
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #19406b;
+}
+.c-helper-div {
+    color: #FFF;
+    width: 60vw;
+    height: 90vh;
+    background-color: rgba( 0, 0, 0, .6 );
+}
+.c-helper-title-div {
+    color: #FFF;
+    font-size: calc(100vh * (38 / 703));
+    font-weight: bolder;
+    background-color: rgba( 0, 0, 0, .6 );
+}
+.c-helper-close-bt {
+    color: #FFF;
+    padding-left: 0.8ch;
+    padding-right: 0.8ch;
+    font-size: calc(100vh * (25 / 703));
+    font-weight: bolder;
+    background-color: rgba( 0, 0, 0, .6 );
+}
+.c-helper-text-div1 {
+    width: 55vw;
+    height: 45vh;
+    font-size: calc(100vh * (25 / 703));
+    font-weight: bolder;
+    overflow-y: scroll;
+    color: #FFF;
+    background-color: rgba( 0, 0, 0, .6 );
+    padding-left: 0.8ch;
+    padding-right: 0.8ch;
+}
+.c-helper-text-div2 {
+    width: 55vw;
+    height: 26vh;
+    font-size: calc(100vh * (25 / 703));
+    font-weight: bolder;
+    overflow-y: scroll;
+    color: #FFF;
+    background-color: rgba( 0, 0, 0, .6 );
+    padding-left: 0.8ch;
+    padding-right: 0.8ch;
+}
+.c-setting-bt {
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+    background-image: url("models/Setting_bt.png");
+    background-size: 7vh 7vh;
+}
+.c-setting-title-div {
+    color: #FFF;
+    font-size: calc(100vh * (38 / 703));
+    font-weight: bolder;
+    background-color: rgba( 0, 0, 0, .6 );
+}
+.c-setting-switch-bton{
+    width: 4vw;
+    height: 4vh;
+    margin: 0 calc(100vh * (3 / 703));
+    border-radius: 2vh;
+    font-size: calc(100vh * (14 / 703));
+    cursor: pointer;
+    position: relative;
+    border: calc(100vh * (1 / 703)) solid white;
+    background-color: #12B090;
+}
+.c-setting-switch-bton-circle{
+    position: absolute;
+    width: 0.8vw;
+    height: 0.8vw;
+    top: calc(50% - 0.5vw);
+    left: 0.5vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0 0 calc(100vh * (10 / 703)) white;
+    transition: all .5s;
+}
+.c-setting-switch-bton-text{
+    top: 0.15vh;
+    position: absolute;
+    right: 0.6vw;
+    line-height: calc(100vh * (25 / 703));
+    color: white;
+    transition: all .5s;
+}
+.c-setting-switch-bton.c-setting-switch-bton1 {
+    top: 15%;
+    left: 20%;
+    z-index: 5;
+}
+.c-setting-switch-bton.c-setting-switch-bton2 {
+    top: 30%;
+    left: 12%;
+    z-index: 5;
+}
+.c-setting-switch1-text {
+    color: #FFF;
+    font-size: calc(100vh * (25 / 703));
+    font-weight: bolder;
+}
+.c-setting-switch2-text {
+    color: #FFF;
+    font-size: calc(100vh * (25 / 703));
+    font-weight: bolder;
+}
+.c-setting-volume-text1 {
+    color: #FFF;
+    font-size: calc(100vh * (25 / 703));
+    font-weight: bolder;
+}
+.label.c-setting-volume-text2 {
+    color: #FFF;
+    font-size: calc(100vh * (25 / 703));
+    font-weight: bolder;
+}
+.c-end-div {
+    width: calc(100vh * (240 / 703));
+    height: calc(100vh * (90 / 703));
+    font-size: calc(100vh * (30 / 703));
+    font-weight: bolder;
+    color: #a8c096;
+    background-color: #19406b;
+}
+.c-chat-box {
+    position: absolute;
+    bottom: 20vh;
+    left: 6vw;
+    width: 20vw;
+    font-size: calc(100vh * (18 / 703));
+    background-color: rgba( 0, 0, 0, .5 );
+    padding-left: 0.8ch;
+    padding-right: 0.8ch;
+    padding-bottom: 0.5em;
+    z-index: 6;
+    border-radius: 0.4em;
+}
+.c-chat-list {
+    max-height: 30vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+.c-chat-list > div {
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    word-wrap: break-word;
+}
+.c-chat-input {
+    width: 95%;
+    height: 1.2em;
+    font-size: calc(100vh * (18 / 703));
+    border-radius: 0.2em;
+    background-color: rgba( 0, 0, 0, .4 );
+    color: #FFF;
+    margin-top: 0.3em;
+}
+.c-chat-name {
+    font-weight: bolder;
+    color: #BBB;
+}
+.c-chat-message {
+    color: #FFF;
+}
+.c-background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 12;
+}
+.c-previous {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 10;
+}
+.loader-animation {
+    animation-name: loader;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+.c-loader {
+    position: absolute;
+    top: 60vh;
+    left: 46vw;
+    translate: translateX(-50%);
+    width: 4.5vw;
+    height: 4.5vw;
+    z-index: 11;
+    border: 1.5vw solid #f3f3f3;
+    border-top: 1.5vw solid #3498db;
+    border-radius: 50%;
+    animation: spin 2s linear 0s infinite;
+}
+.c-previous-text {
+    width: 18vw;
+    height: 8vh;
+    font-size: calc(100vh * (30 / 703));
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: rgba( 0, 0, 0, 0 );
+}
+@keyframes loader {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
