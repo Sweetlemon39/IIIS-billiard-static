@@ -11,12 +11,12 @@ body {
 .label {
     color: #FFF;
     font-family: sans-serif;
-    padding: calc(100vh * (3 / 703));
-    border: calc(100vh * (2 / 703));
-    font-size: min(calc(100vh * (20 / 703)), calc(100vw * (20 / 1536)));
+    padding: calc(100dvh * (3 / 703));
+    border: calc(100dvh * (2 / 703));
+    font-size: min(calc(100dvh * (20 / 703)), calc(100dvw * (20 / 1536)));
     position: absolute;
     background: rgba(0, 0, 0, .6);
-    border-radius: calc(100vh * (5 / 703));
+    border-radius: calc(100dvh * (5 / 703));
     user-select: none;
     z-index: 1;
 }
@@ -26,22 +26,22 @@ body {
 }
 
 .label.c-start-bt {
-    top: 53vh;
-    left: 50vw;
+    top: 53dvh;
+    left: 50dvw;
     z-index: 3;
     transform: translateX(-50%);
 }
 
 .label.c-connect-input {
-    top: 68vh;
-    left: 50vw;
+    top: 68dvh;
+    left: 50dvw;
     z-index: 3;
     transform: translateX(-50%);
 }
 
 .label.c-connect-bt {
-    top: 78vh;
-    left: 50vw;
+    top: 78dvh;
+    left: 50dvw;
     z-index: 3;
     transform: translateX(-50%);
 }
@@ -54,15 +54,15 @@ body {
 }
 
 .label.c-helper-bt {
-    top: 88vh;
-    left: 50vw;
+    top: 88dvh;
+    left: 50dvw;
     z-index: 3;
     transform: translateX(-50%);
 }
 
 .label.c-helper-div {
-    top: 3vh;
-    left: 50vw;
+    top: 3dvh;
+    left: 50dvw;
     z-index: 4;
     transform: translateX(-50%);
 }
@@ -116,7 +116,7 @@ body {
 }
 
 .label.c-status {
-    top: calc(3% + calc(100vh * (40 / 703)));
+    top: calc(3% + calc(100dvh * (40 / 703)));
     left: 50%;
     transform: translateX(-50%);
 }
@@ -164,8 +164,8 @@ body {
 }
 
 .label.c-previous-text {
-    top: 78vh;
-    left: 43vw;
+    top: 78dvh;
+    left: 43dvw;
     translate: translateX(-50%);
     z-index: 11;
 }
@@ -173,12 +173,12 @@ body {
 .current {
     color: #FFF;
     font-family: sans-serif;
-    padding: calc(100vh * (3 / 703));
-    border: calc(100vh * (2 / 703));
-    font-size: min(calc(100vh * (20 / 703)), calc(100vw * (20 / 1536)));
+    padding: calc(100dvh * (3 / 703));
+    border: calc(100dvh * (2 / 703));
+    font-size: min(calc(100dvh * (20 / 703)), calc(100dvw * (20 / 1536)));
     position: absolute;
     background: rgba(0, 0, 0, 0);
-    border-radius: calc(100vh * (5 / 703));
+    border-radius: calc(100dvh * (5 / 703));
     user-select: none;
     z-index: 0;
 }
@@ -191,8 +191,8 @@ body {
 }
 
 .meter {
-    width: 40vh;
-    height: 3vw;
+    width: 40dvh;
+    height: 3dvw;
     transform: rotate(270deg) translateY(160%);
 }
 
@@ -205,20 +205,20 @@ body {
 }
 
 .volume {
-    width: 15vw;
-    height: 5vh;
+    width: 15dvw;
+    height: 5dvh;
     transform: rotate(270deg) translateY(100%);
 }
 
 .box-div {
     color: #FFF;
     font-family: sans-serif;
-    padding: calc(100vh * (3 / 703));
-    border: calc(100vh * (2 / 703));
-    font-size: min(calc(100vh * (20 / 703)), calc(100vw * (20 / 1536)));
+    padding: calc(100dvh * (3 / 703));
+    border: calc(100dvh * (2 / 703));
+    font-size: min(calc(100dvh * (20 / 703)), calc(100dvw * (20 / 1536)));
     position: absolute;
     background: rgba(0, 0, 0, .6);
-    border-radius: calc(100vh * (5 / 703));
+    border-radius: calc(100dvh * (5 / 703));
     user-select: none;
 }
 
@@ -245,18 +245,18 @@ body {
 }
 
 .c-start-bt {
-    width: 18vw;
-    height: 8vh;
-    font-size: min(calc(100vh * (30 / 703)), calc(100vw * (30 / 1536)));
+    width: 18dvw;
+    height: 8dvh;
+    font-size: min(calc(100dvh * (30 / 703)), calc(100dvw * (30 / 1536)));
     font-weight: bolder;
     color: #ffffff;
     background-color: #19406b;
 }
 
 .c-connect-bt {
-    width: 18vw;
-    height: 8vh;
-    font-size: min(calc(100vh * (30 / 703)), calc(100vw * (30 / 1536)));
+    width: 18dvw;
+    height: 8dvh;
+    font-size: min(calc(100dvh * (30 / 703)), calc(100dvw * (30 / 1536)));
     font-weight: bolder;
     color: #ffffff;
     background-color: #19406b;
@@ -264,13 +264,13 @@ body {
 
 .c-connect-id {
     position: absolute;
-    top: 62vh;
-    left: 50vw;
+    top: 62dvh;
+    left: 50dvw;
     z-index: 3;
     transform: translateX(-50%);
-    width: 18vw;
-    height: 8vh;
-    font-size: min(calc(100vh * (24 / 703)), calc(100vw * (24 / 1536)));
+    width: 18dvw;
+    height: 8dvh;
+    font-size: min(calc(100dvh * (24 / 703)), calc(100dvw * (24 / 1536)));
     font-weight: bolder;
     color: #ffffff;
     /* background-color: #19406b; */
@@ -282,9 +282,9 @@ body {
 }
 
 .c-connect-input {
-    width: 17.5vw;
-    height: 8vh;
-    font-size: min(calc(100vh * (26 / 703)), calc(100vw * (26 / 1536)));
+    width: 17.5dvw;
+    height: 8dvh;
+    font-size: min(calc(100dvh * (26 / 703)), calc(100dvw * (26 / 1536)));
     font-weight: bolder;
     color: #ffffff;
     background-color: #19406b;
@@ -292,9 +292,9 @@ body {
 }
 
 .c-game-result {
-    width: 20vw;
-    height: 8vh;
-    font-size: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));
+    width: 20dvw;
+    height: 8dvh;
+    font-size: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));
     font-weight: bolder;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0);
@@ -302,9 +302,9 @@ body {
 }
 
 .c-helper-bt {
-    width: 18vw;
-    height: 8vh;
-    font-size: min(calc(100vh * (30 / 703)), calc(100vw * (30 / 1536)));
+    width: 18dvw;
+    height: 8dvh;
+    font-size: min(calc(100dvh * (30 / 703)), calc(100dvw * (30 / 1536)));
     font-weight: bolder;
     color: #ffffff;
     background-color: #19406b;
@@ -312,14 +312,14 @@ body {
 
 .c-helper-div {
     color: #FFF;
-    width: 60vw;
-    height: 90vh;
+    width: 60dvw;
+    height: 90dvh;
     background-color: rgba(0, 0, 0, .6);
 }
 
 .c-helper-title-div {
     color: #FFF;
-    font-size: min(calc(100vh * (38 / 703)), calc(100vw * (38 / 1536)));
+    font-size: min(calc(100dvh * (38 / 703)), calc(100dvw * (38 / 1536)));
     font-weight: bolder;
     background-color: rgba(0, 0, 0, .6);
 }
@@ -328,15 +328,15 @@ body {
     color: #FFF;
     padding-left: 0.8ch;
     padding-right: 0.8ch;
-    font-size: min(calc(100vh * (25 / 703)), calc(100vw * (25 / 1536)));
+    font-size: min(calc(100dvh * (25 / 703)), calc(100dvw * (25 / 1536)));
     font-weight: bolder;
     background-color: rgba(0, 0, 0, .6);
 }
 
 .c-helper-text-div1 {
-    width: 55vw;
-    height: 45vh;
-    font-size: min(calc(100vh * (25 / 703)), calc(100vw * (25 / 1536)));
+    width: 55dvw;
+    height: 45dvh;
+    font-size: min(calc(100dvh * (25 / 703)), calc(100dvw * (25 / 1536)));
     font-weight: bolder;
     overflow-y: scroll;
     color: #FFF;
@@ -346,9 +346,9 @@ body {
 }
 
 .c-helper-text-div2 {
-    width: 55vw;
-    height: 26vh;
-    font-size: min(calc(100vh * (25 / 703)), calc(100vw * (25 / 1536)));
+    width: 55dvw;
+    height: 26dvh;
+    font-size: min(calc(100dvh * (25 / 703)), calc(100dvw * (25 / 1536)));
     font-weight: bolder;
     overflow-y: scroll;
     color: #FFF;
@@ -358,49 +358,49 @@ body {
 }
 
 .c-setting-bt {
-    width: min(7vh, calc(7vw * 703 / 1536));
-    height: min(7vh, calc(7vw * 703 / 1536));
+    width: min(7dvh, calc(7dvw * 703 / 1536));
+    height: min(7dvh, calc(7dvw * 703 / 1536));
     border-radius: 50%;
     background-image: url("models/Setting_bt.png");
-    background-size: min(7vh, calc(7vw * 703 / 1536)) min(7vh, calc(7vw * 703 / 1536));
+    background-size: min(7dvh, calc(7dvw * 703 / 1536)) min(7dvh, calc(7dvw * 703 / 1536));
 }
 
 .c-setting-title-div {
     color: #FFF;
-    font-size: min(calc(100vh * (38 / 703)), calc(100vw * (38 / 1536)));
+    font-size: min(calc(100dvh * (38 / 703)), calc(100dvw * (38 / 1536)));
     font-weight: bolder;
     background-color: rgba(0, 0, 0, .6);
 }
 
 .c-setting-switch-bton {
-    width: 4vw;
-    height: 4vh;
-    margin: 0 calc(100vh * (3 / 703));
-    border-radius: 2vh;
-    font-size: min(calc(100vh * (14 / 703)), calc(100vw * (14 / 1536)));
+    width: 4dvw;
+    height: 4dvh;
+    margin: 0 calc(100dvh * (3 / 703));
+    border-radius: 2dvh;
+    font-size: min(calc(100dvh * (14 / 703)), calc(100dvw * (14 / 1536)));
     cursor: pointer;
     position: relative;
-    border: calc(100vh * (1 / 703)) solid white;
+    border: calc(100dvh * (1 / 703)) solid white;
     background-color: #12B090;
 }
 
 .c-setting-switch-bton-circle {
     position: absolute;
-    width: 0.8vw;
-    height: 0.8vw;
-    top: calc(50% - 0.5vw);
-    left: 0.5vw;
+    width: 0.8dvw;
+    height: 0.8dvw;
+    top: calc(50% - 0.5dvw);
+    left: 0.5dvw;
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
-    box-shadow: 0 0 calc(100vh * (10 / 703)) white;
+    box-shadow: 0 0 calc(100dvh * (10 / 703)) white;
     transition: all .5s;
 }
 
 .c-setting-switch-bton-text {
-    top: 0.15vh;
+    top: 0.15dvh;
     position: absolute;
-    right: 0.6vw;
-    line-height: calc(100vh * (25 / 703));
+    right: 0.6dvw;
+    line-height: calc(100dvh * (25 / 703));
     color: white;
     transition: all .5s;
 }
@@ -419,32 +419,32 @@ body {
 
 .c-setting-switch1-text {
     color: #FFF;
-    font-size: min(calc(100vh * (25 / 703)), calc(100vw * (25 / 1536)));
+    font-size: min(calc(100dvh * (25 / 703)), calc(100dvw * (25 / 1536)));
     font-weight: bolder;
 }
 
 .c-setting-switch2-text {
     color: #FFF;
-    font-size: min(calc(100vh * (25 / 703)), calc(100vw * (25 / 1536)));
+    font-size: min(calc(100dvh * (25 / 703)), calc(100dvw * (25 / 1536)));
     font-weight: bolder;
 }
 
 .c-setting-volume-text1 {
     color: #FFF;
-    font-size: min(calc(100vh * (25 / 703)), calc(100vw * (25 / 1536)));
+    font-size: min(calc(100dvh * (25 / 703)), calc(100dvw * (25 / 1536)));
     font-weight: bolder;
 }
 
 .label.c-setting-volume-text2 {
     color: #FFF;
-    font-size: min(calc(100vh * (25 / 703)), calc(100vw * (25 / 1536)));
+    font-size: min(calc(100dvh * (25 / 703)), calc(100dvw * (25 / 1536)));
     font-weight: bolder;
 }
 
 .c-end-div {
-    width: calc(100vh * (240 / 703));
-    height: calc(100vh * (90 / 703));
-    font-size: min(calc(100vh * (30 / 703)), calc(100vw * (30 / 1536)));
+    width: calc(100dvh * (240 / 703));
+    height: calc(100dvh * (90 / 703));
+    font-size: min(calc(100dvh * (30 / 703)), calc(100dvw * (30 / 1536)));
     font-weight: bolder;
     color: #a8c096;
     background-color: #19406b;
@@ -452,10 +452,10 @@ body {
 
 .c-chat-box {
     position: absolute;
-    bottom: 32vh;
-    left: 6vw;
-    width: 20vw;
-    font-size: min(calc(100vh * (18 / 703)), calc(100vw * (18 / 1536)));
+    bottom: 32dvh;
+    left: 6dvw;
+    width: 20dvw;
+    font-size: min(calc(100dvh * (18 / 703)), calc(100dvw * (18 / 1536)));
     background-color: rgba(0, 0, 0, .5);
     padding-left: 0.8ch;
     padding-right: 0.8ch;
@@ -465,7 +465,7 @@ body {
 }
 
 .c-chat-list {
-    max-height: 30vh;
+    max-height: 30dvh;
     overflow-x: hidden;
     overflow-y: scroll;
     display: flex;
@@ -481,7 +481,7 @@ body {
 .c-chat-input {
     width: 95%;
     height: 1.2em;
-    font-size: min(calc(100vh * (18 / 703)), calc(100vw * (18 / 1536)));
+    font-size: min(calc(100dvh * (18 / 703)), calc(100dvw * (18 / 1536)));
     border-radius: 0.2em;
     background-color: rgba(0, 0, 0, .4);
     color: #FFF;
@@ -499,16 +499,16 @@ body {
 
 .c-background {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     background-color: #ffffff;
     z-index: 12;
 }
 
 .c-previous {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     background-color: #ffffff;
     z-index: 10;
 }
@@ -522,22 +522,22 @@ body {
 
 .c-loader {
     position: absolute;
-    top: 60vh;
-    left: 46vw;
+    top: 60dvh;
+    left: 46dvw;
     translate: translateX(-50%);
-    width: 4.5vw;
-    height: 4.5vw;
+    width: 4.5dvw;
+    height: 4.5dvw;
     z-index: 11;
-    border: 1.5vw solid #f3f3f3;
-    border-top: 1.5vw solid #3498db;
+    border: 1.5dvw solid #f3f3f3;
+    border-top: 1.5dvw solid #3498db;
     border-radius: 50%;
     animation: spin 2s linear 0s infinite;
 }
 
 .c-previous-text {
-    width: 18vw;
-    height: 8vh;
-    font-size: min(calc(100vh * (30 / 703)), calc(100vw * (30 / 1536)));
+    width: 18dvw;
+    height: 8dvh;
+    font-size: min(calc(100dvh * (30 / 703)), calc(100dvw * (30 / 1536)));
     font-weight: bolder;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0);
@@ -565,30 +565,30 @@ body {
 
 .rotate-prompt-background {
     background-color: grey;
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     position: absolute;
-    top: 0vh;
-    left: 0vw;
+    top: 0dvh;
+    left: 0dvw;
     z-index: 20;
     display: none;
 }
 
 .rotate-svg {
-    max-width: 40vw;
-    max-height: 40vh;
+    max-width: 40dvw;
+    max-height: 40dvh;
     position: absolute;
-    left: 50vw;
-    top: 30vh;
+    left: 50dvw;
+    top: 30dvh;
     transform: translateX(-50%) translateY(-50%);
 }
 
 .rotate-text {
     position: absolute;
-    left: 15vw;
-    max-width: 70vw;
-    top: 55vh;
-    font-size: calc(100vw * (80 / 1600));
+    left: 15dvw;
+    max-width: 70dvw;
+    top: 55dvh;
+    font-size: calc(100dvw * (80 / 1600));
 }
 
 @media (orientation: portrait) {
@@ -609,39 +609,39 @@ body {
 
 .c-touch-wasd-bt {
     position: absolute;
-    width: min(4vw, 4vh * 1536 / 703);
-    height: min(4vw, 4vh * 1536 / 703);
+    width: min(4dvw, 4dvh * 1536 / 703);
+    height: min(4dvw, 4dvh * 1536 / 703);
     background-color: rgba(70, 70, 70, 0.6);
     color: rgba(150, 150, 150, 0.8);
     border-radius: 2px;
-    font-size: min(2vw, 2vh * 1536 / 703);
+    font-size: min(2dvw, 2dvh * 1536 / 703);
     z-index: 2;
 }
 
 .c-touch-wasd-bt-w {
-    top: min(75vh, 90vh - min(4vw, 4vh * 1536 / 703) * 2 - 1vh * 2);
-    left: calc(5vw + min(4vw, 4vh * 1536 / 703) + 1vh);
+    top: min(75dvh, 90dvh - min(4dvw, 4dvh * 1536 / 703) * 2 - 1dvh * 2);
+    left: calc(5dvw + min(4dvw, 4dvh * 1536 / 703) + 1dvh);
 }
 
 .c-touch-wasd-bt-a {
-    top: calc(min(75vh, 90vh - min(4vw, 4vh * 1536 / 703) * 2 - 1vh * 2) + min(4vw, 4vh * 1536 / 703) + 1vh);
-    left: 5vw;
+    top: calc(min(75dvh, 90dvh - min(4dvw, 4dvh * 1536 / 703) * 2 - 1dvh * 2) + min(4dvw, 4dvh * 1536 / 703) + 1dvh);
+    left: 5dvw;
 }
 
 .c-touch-wasd-bt-s {
-    top: calc(min(75vh, 90vh - min(4vw, 4vh * 1536 / 703) * 2 - 1vh * 2) + min(4vw, 4vh * 1536 / 703) * 2 + 1vh * 2);
-    left: calc(5vw + min(4vw, 4vh * 1536 / 703) + 1vh);
+    top: calc(min(75dvh, 90dvh - min(4dvw, 4dvh * 1536 / 703) * 2 - 1dvh * 2) + min(4dvw, 4dvh * 1536 / 703) * 2 + 1dvh * 2);
+    left: calc(5dvw + min(4dvw, 4dvh * 1536 / 703) + 1dvh);
 }
 
 .c-touch-wasd-bt-d {
-    top: calc(min(75vh, 90vh - min(4vw, 4vh * 1536 / 703) * 2 - 1vh * 2) + min(4vw, 4vh * 1536 / 703) + 1vh);
-    left: calc(5vw + min(4vw, 4vh * 1536 / 703) * 2 + 1vh * 2);
+    top: calc(min(75dvh, 90dvh - min(4dvw, 4dvh * 1536 / 703) * 2 - 1dvh * 2) + min(4dvw, 4dvh * 1536 / 703) + 1dvh);
+    left: calc(5dvw + min(4dvw, 4dvh * 1536 / 703) * 2 + 1dvh * 2);
 }
 
 .c-touch-wasd-bt-shift {
-    top: calc(min(75vh, 90vh - min(4vw, 4vh * 1536 / 703) * 2 - 1vh * 2) + min(4vw, 4vh * 1536 / 703) + 1vh);
-    left: calc(5vw + min(4vw, 4vh * 1536 / 703) + 1vh);
-    font-size: calc(min(2vw, 2vh * 1536 / 703) / 1.3);
+    top: calc(min(75dvh, 90dvh - min(4dvw, 4dvh * 1536 / 703) * 2 - 1dvh * 2) + min(4dvw, 4dvh * 1536 / 703) + 1dvh);
+    left: calc(5dvw + min(4dvw, 4dvh * 1536 / 703) + 1dvh);
+    font-size: calc(min(2dvw, 2dvh * 1536 / 703) / 1.3);
     padding: 0px;
     display: flex;
     align-items: center;

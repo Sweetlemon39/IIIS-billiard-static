@@ -24,7 +24,7 @@
                 <button id="touch-shift" class="c-touch-wasd-bt c-touch-wasd-bt-shift">Shift</button>
             </div>
         </div>
-        <div id="previous" style="width: 100vw; height: 100vh; display: none;">
+        <div id="previous" style="width: 100dvw; height: 100dvh; display: none;">
             <div id="loader" class="c-loader"></div>
             <div id="previous-text" class="label c-previous-text"></div>
             <img src="https://cdn.jsdelivr.net/gh/Sweetlemon39/IIIS-billiard-static@main/models/White_blackground.jpg" class="c-background loader-animation">
@@ -106,14 +106,14 @@
                     </ul>
                 </div>
             </div>
-            <img src="models/Start_prompt.jpg" style="width: 100vw; height: 100vh; position: absolute; top: 0; left: 0;">
+            <img src="models/Start_prompt.jpg" style="width: 100dvw; height: 100dvh; position: absolute; top: 0; left: 0;">
         </div>
         <div id="end" class="label c-end" style="display: none;">
             <button id="restart-button" class="label c-connect-bt">
                 Restart
             </button>
             <div id="game-result" class="label c-game-result"></div>
-            <img src="https://cdn.jsdelivr.net/gh/Sweetlemon39/IIIS-billiard-static@main/models/End_prompt.jpg" style="width: 100vw; height: 100vh;">
+            <img src="https://cdn.jsdelivr.net/gh/Sweetlemon39/IIIS-billiard-static@main/models/End_prompt.jpg" style="width: 100dvw; height: 100dvh;">
         </div>
         <button id="setting-button" class="label c-setting-bt" style="display: none;"></button>
         <div class="c-chat-box" id="chat-box" style="display: none;">
@@ -149,104 +149,104 @@
             <meter id="shoot-force" class="meter" min="0" style="display: none;"></meter>
         </div>
         <div id="shoot-target-hint-div" class="shoot-target-div" style="display: none;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" style="width: calc(100vh * (80 / 703)); height: calc(100vh * (80 / 703));">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" style="width: calc(100dvh * (80 / 703)); height: calc(100dvh * (80 / 703));">
                 <circle cx="40" cy="40" r="40" fill="#000000" /> <!-- Stoke -->
                 <circle cx="40" cy="40" r="39" fill="#ffffff" />
                 <circle cx="40" cy="40" r="3" fill="#00ff00" id="shoot-target-hit" style="display: none;" />
                 <circle cx="40" cy="40" r="3" fill="#ff0000" id="shoot-target-miss" />
             </svg>
         </div>
-        <div id="current" class="current" style="width: 100vw; height: 100vh; display: none;">
+        <div id="current" class="current" style="width: 100dvw; height: 100dvh; display: none;">
             <div id="current-party" class="label c-party" style="z-index: 1;">Current player: </div>
             <div id="current-status" class="label c-status" style="z-index: 1;"></div>
             <div id="aris-box" class="box-div aris-bx">
                 <div id="aris-name" class="top-centered">Aris
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="a-ball-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="a-ball-0">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                     </svg>
                 </div>
                 <div id="a-first-seven-balls">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="a-ball-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="a-ball-1">
                         <circle cx="20" cy="20" r="20" fill="#fdbe0e" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">1</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="a-ball-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="a-ball-2">
                         <circle cx="20" cy="20" r="20" fill="#082d85" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">2</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="a-ball-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="a-ball-3">
                         <circle cx="20" cy="20" r="20" fill="#e23549" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">3</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="a-ball-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="a-ball-4">
                         <circle cx="20" cy="20" r="20" fill="#ff9a92" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">4</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="a-ball-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="a-ball-5">
                         <circle cx="20" cy="20" r="20" fill="#fe6927" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">5</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="a-ball-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="a-ball-6">
                         <circle cx="20" cy="20" r="20" fill="#007452" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">6</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="a-ball-7">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="a-ball-7">
                         <circle cx="20" cy="20" r="20" fill="#995911" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">7</text>
                     </svg>
                 </div>
                 <div id="a-black-ball">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); display: none;" id="a-ball-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); display: none;" id="a-ball-8">
                         <circle cx="20" cy="20" r="20" fill="#000000" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">8</text>
                     </svg>
                 </div>
                 <div id="a-last-seven-balls">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="a-ball-9">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="a-ball-9">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                         <path d="M 8 4 S 20 2, 32 4 A 20 20 0 0 1 36 32 S 20 25, 4 32 A 20 20 0 0 1 8 4" fill="#fdbe0e"></path>
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">9</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="a-ball-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="a-ball-10">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                         <path d="M 8 4 S 20 2, 32 4 A 20 20 0 0 1 36 32 S 20 25, 4 32 A 20 20 0 0 1 8 4" fill="#082d85"></path>
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="7" y="21" style="font-size: 14px;">10</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="a-ball-11">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="a-ball-11">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                         <path d="M 8 4 S 20 2, 32 4 A 20 20 0 0 1 36 32 S 20 25, 4 32 A 20 20 0 0 1 8 4" fill="#e23549"></path>
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="7" y="21" style="font-size: 14px;">11</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="a-ball-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="a-ball-12">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                         <path d="M 8 4 S 20 2, 32 4 A 20 20 0 0 1 36 32 S 20 25, 4 32 A 20 20 0 0 1 8 4" fill="#ff9a92"></path>
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="7" y="21" style="font-size: 14px;">12</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="a-ball-13">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="a-ball-13">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                         <path d="M 8 4 S 20 2, 32 4 A 20 20 0 0 1 36 32 S 20 25, 4 32 A 20 20 0 0 1 8 4" fill="#fe6927"></path>
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="7" y="21" style="font-size: 14px;">13</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="a-ball-14">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="a-ball-14">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                         <path d="M 8 4 S 20 2, 32 4 A 20 20 0 0 1 36 32 S 20 25, 4 32 A 20 20 0 0 1 8 4" fill="#007452"></path>
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="7" y="21" style="font-size: 14px;">14</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="a-ball-15">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="a-ball-15">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                         <path d="M 8 4 S 20 2, 32 4 A 20 20 0 0 1 36 32 S 20 25, 4 32 A 20 20 0 0 1 8 4" fill="#995911"></path>
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
@@ -256,92 +256,92 @@
             </div>
             <div id="sensei-box" class="box-div sensei-bx">
                 <div id="sensei-name" class="top-centered">Sensei
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="s-ball-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="s-ball-0">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                     </svg>
                 </div>
                 <div id="s-first-seven-balls">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="s-ball-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="s-ball-1">
                         <circle cx="20" cy="20" r="20" fill="#fdbe0e" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">1</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="s-ball-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="s-ball-2">
                         <circle cx="20" cy="20" r="20" fill="#082d85" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">2</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="s-ball-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="s-ball-3">
                         <circle cx="20" cy="20" r="20" fill="#e23549" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">3</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="s-ball-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="s-ball-4">
                         <circle cx="20" cy="20" r="20" fill="#ff9a92" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">4</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="s-ball-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="s-ball-5">
                         <circle cx="20" cy="20" r="20" fill="#fe6927" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">5</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="s-ball-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="s-ball-6">
                         <circle cx="20" cy="20" r="20" fill="#007452" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">6</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="s-ball-7">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="s-ball-7">
                         <circle cx="20" cy="20" r="20" fill="#995911" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">7</text>
                     </svg>
                 </div>
                 <div id="s-black-ball">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); display: none;" id="s-ball-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); display: none;" id="s-ball-8">
                         <circle cx="20" cy="20" r="20" fill="#000000" />
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">8</text>
                     </svg>
                 </div>
                 <div id="s-last-seven-balls">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="s-ball-9">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="s-ball-9">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                         <path d="M 8 4 S 20 2, 32 4 A 20 20 0 0 1 36 32 S 20 25, 4 32 A 20 20 0 0 1 8 4" fill="#fdbe0e"></path>
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="11" y="21" style="font-size: 14px;">9</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="s-ball-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="s-ball-10">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                         <path d="M 8 4 S 20 2, 32 4 A 20 20 0 0 1 36 32 S 20 25, 4 32 A 20 20 0 0 1 8 4" fill="#082d85"></path>
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="7" y="21" style="font-size: 14px;">10</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="s-ball-11">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="s-ball-11">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                         <path d="M 8 4 S 20 2, 32 4 A 20 20 0 0 1 36 32 S 20 25, 4 32 A 20 20 0 0 1 8 4" fill="#e23549"></path>
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="7" y="21" style="font-size: 14px;">11</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="s-ball-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="s-ball-12">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                         <path d="M 8 4 S 20 2, 32 4 A 20 20 0 0 1 36 32 S 20 25, 4 32 A 20 20 0 0 1 8 4" fill="#ff9a92"></path>
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="7" y="21" style="font-size: 14px;">12</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="s-ball-13">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="s-ball-13">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                         <path d="M 8 4 S 20 2, 32 4 A 20 20 0 0 1 36 32 S 20 25, 4 32 A 20 20 0 0 1 8 4" fill="#fe6927"></path>
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="7" y="21" style="font-size: 14px;">13</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="s-ball-14">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="s-ball-14">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                         <path d="M 8 4 S 20 2, 32 4 A 20 20 0 0 1 36 32 S 20 25, 4 32 A 20 20 0 0 1 8 4" fill="#007452"></path>
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
                         <text x="7" y="21" style="font-size: 14px;">14</text>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536))); height: min(calc(100vh * (40 / 703)), calc(100vw * (40 / 1536)));" id="s-ball-15">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" style="width: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536))); height: min(calc(100dvh * (40 / 703)), calc(100dvw * (40 / 1536)));" id="s-ball-15">
                         <circle cx="20" cy="20" r="20" fill="#ffffff" />
                         <path d="M 8 4 S 20 2, 32 4 A 20 20 0 0 1 36 32 S 20 25, 4 32 A 20 20 0 0 1 8 4" fill="#995911"></path>
                         <circle cx="16" cy="16" r="10" fill="#ffffff" />
