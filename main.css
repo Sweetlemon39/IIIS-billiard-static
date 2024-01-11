@@ -452,7 +452,7 @@ body {
 
 .c-chat-box {
     position: absolute;
-    bottom: 20vh;
+    bottom: 32vh;
     left: 6vw;
     width: 20vw;
     font-size: min(calc(100vh * (18 / 703)), calc(100vw * (18 / 1536)));
@@ -595,4 +595,60 @@ body {
     .rotate-prompt-background {
         display: block;
     }
+}
+
+.c-touch-keys {
+    display: none;
+}
+
+@media (pointer: coarse), (hover: none) {
+    .c-touch-keys {
+        display: block;
+    }
+}
+
+.c-touch-wasd-bt {
+    position: absolute;
+    width: min(4vw, 4vh * 1536 / 703);
+    height: min(4vw, 4vh * 1536 / 703);
+    background-color: rgba(70, 70, 70, 0.6);
+    color: rgba(150, 150, 150, 0.8);
+    border-radius: 2px;
+    font-size: min(2vw, 2vh * 1536 / 703);
+    z-index: 2;
+}
+
+.c-touch-wasd-bt-w {
+    top: min(75vh, 90vh - min(4vw, 4vh * 1536 / 703) * 2 - 1vh * 2);
+    left: calc(5vw + min(4vw, 4vh * 1536 / 703) + 1vh);
+}
+
+.c-touch-wasd-bt-a {
+    top: calc(min(75vh, 90vh - min(4vw, 4vh * 1536 / 703) * 2 - 1vh * 2) + min(4vw, 4vh * 1536 / 703) + 1vh);
+    left: 5vw;
+}
+
+.c-touch-wasd-bt-s {
+    top: calc(min(75vh, 90vh - min(4vw, 4vh * 1536 / 703) * 2 - 1vh * 2) + min(4vw, 4vh * 1536 / 703) * 2 + 1vh * 2);
+    left: calc(5vw + min(4vw, 4vh * 1536 / 703) + 1vh);
+}
+
+.c-touch-wasd-bt-d {
+    top: calc(min(75vh, 90vh - min(4vw, 4vh * 1536 / 703) * 2 - 1vh * 2) + min(4vw, 4vh * 1536 / 703) + 1vh);
+    left: calc(5vw + min(4vw, 4vh * 1536 / 703) * 2 + 1vh * 2);
+}
+
+.c-touch-wasd-bt-shift {
+    top: calc(min(75vh, 90vh - min(4vw, 4vh * 1536 / 703) * 2 - 1vh * 2) + min(4vw, 4vh * 1536 / 703) + 1vh);
+    left: calc(5vw + min(4vw, 4vh * 1536 / 703) + 1vh);
+    font-size: calc(min(2vw, 2vh * 1536 / 703) / 1.3);
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-touch-wasd-bt-shift-active {
+    background-color: rgba(50, 50, 50, 0.8);
+    color: rgba(170, 170, 170, 1);
 }
